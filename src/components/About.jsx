@@ -34,7 +34,7 @@ const About = () => {
             <div className="grow pt-0.5 pb-8">
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
                 <img
-                  className="w-14"
+                  className="w-14 h-5"
                   src={verticals}
                   alt="Verticals"
                 />
@@ -62,7 +62,7 @@ const About = () => {
             <div className="grow pt-0.5 pb-8">
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
                 <img
-                  className="w-14"
+                  className="w-14 h-5"
                   src={expand}
                   alt="Expand"
                 />
@@ -90,7 +90,7 @@ const About = () => {
             <div className="grow pt-0.5 pb-8">
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
                 <img
-                  className="w-14"
+                  className="w-14 h-5"
                   src={gitam}
                   alt="GITAM"
                 />
