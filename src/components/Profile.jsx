@@ -107,7 +107,8 @@ const Profile = () => {
               className="border border-gray-200 p-1 rounded text-center"
               key={skill}
             >
-              <p className="sm:text-[12px] md:text-base">{skill}</p>
+              <p className="text-[13px] md:text-base lg:text-base xl:text-base">{skill}</p>
+
             </div>
           ))}
         </div>
