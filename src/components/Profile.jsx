@@ -2,6 +2,24 @@ import React from "react";
 import saikumar from "/saikumar.svg";
 
 const Profile = () => {
+  const keySkils = [
+    "html5",
+    "css3",
+    "bootstrap",
+    "javascript",
+    "react js",
+    "jquery",
+    "ajax",
+    "php",
+    "codeigniter",
+    "laravel",
+    "mysql",
+    "sql",
+    "wordpress",
+    "drupal",
+    "api",
+  ];
+
   return (
     <div className="profile">
       <div className="img text-center content-center bg-white p-4">
@@ -82,20 +100,16 @@ const Profile = () => {
         </p>
       </div>
       <div className="mt-4 skills bg-white p-4">
-        <h5 className="text-xl font-bold text-center">Skills</h5>
-        <div className="grid grid-cols-3 gap-4 uppercase mt-3 text-center">
-            <div className="border-1 border-gray-200 p-1">html5</div>
-            <div className="border-1 border-gray-200 p-1">css3</div>
-            <div className="border-1 border-gray-200 p-1">bootstrap</div>
-            <div className="border-1 border-gray-200 p-1">javascript</div>
-            <div className="border-1 border-gray-200 p-1">react js</div>
-            <div className="border-1 border-gray-200 p-1">jquery</div>
-            <div className="border-1 border-gray-200 p-1">ajax</div>
-            <div className="border-1 border-gray-200 p-1">php</div>
-            <div className="border-1 border-gray-200 p-1">codeigniter</div>
-            <div className="border-1 border-gray-200 p-1">laravel</div>
-            <div className="border-1 border-gray-200 p-1">wordpress</div>
-            <div className="border-1 border-gray-200 p-1">drupal</div>
+        <h5 className="text-xl font-bold text-center">Technical Skills</h5>
+        <div className="grid grid-cols-3 gap-4 uppercase mt-4 text-center">
+          {keySkils.map((skill) => (
+            <div
+              className="border border-gray-200 p-1 rounded text-center"
+              key={skill}
+            >
+              <p>{skill}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
