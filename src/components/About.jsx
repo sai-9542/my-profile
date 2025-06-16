@@ -177,6 +177,41 @@ const About = () => {
                   </li>
                 </ul>
               </li>
+              <li className="font-semibold">
+                Approvers Module:
+                <ul className="font-normal list-disc pl-6">
+                  <li>
+                    <span className="font-semibold">HOD Approval: </span>
+                    Inventory requests from the kitchen are reviewed and modified by the Head of Department (HOD) and Head of Institute (HOI).
+                  </li>
+                  <li>
+                    <span className="font-semibold">Approval Workflow: </span>
+                    Requests must be approved by both HOD and HOI before being forwarded to the Store module.
+                  </li>
+                </ul>
+              </li>
+              <li className="font-semibold">
+                Kitchen Module:
+                <ul className="font-normal list-disc pl-6">
+                  <li>
+                    <span className="font-semibold">Request Creation: </span>
+                    Kitchen staff can request items needed for cooking by adding them to a cart and raising an inventory request.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Request Submission: </span>
+                    Requests are sent to the HOD for review and modification, then to the HOI for final approval.
+                  </li>
+                </ul>
+              </li>
+              <li className="font-semibold">
+                Storekeeper:
+                <ul className="font-normal list-disc pl-6">
+                  <li>
+                    <span className="font-semibold">Indent Issuance: </span>
+                    Upon final approval, the storekeeper processes the request and issues the indent for the items.
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -201,12 +236,12 @@ const About = () => {
               <path d="M55.868,3.8c-2.446-2.446-5.709-3.793-9.189-3.793c-3.479,0-6.743,1.347-9.189,3.793l-9.07,9.07  c-3.275,3.275-4.42,7.876-3.461,12.09c-0.941-0.212-1.91-0.333-2.9-0.333c-3.479,0-6.743,1.347-9.188,3.793L3.8,37.491  c-5.066,5.066-5.066,13.312,0,18.378c2.446,2.446,5.709,3.793,9.189,3.793s6.743-1.347,9.189-3.793l9.07-9.07  c3.275-3.275,4.42-7.876,3.461-12.09c0.941,0.212,1.91,0.333,2.9,0.333c3.48,0,6.744-1.347,9.189-3.793l9.071-9.07  C60.936,17.112,60.936,8.867,55.868,3.8z M28.42,43.97l-9.07,9.07c-1.69,1.69-3.95,2.621-6.361,2.621s-4.67-0.931-6.361-2.621  c-3.507-3.508-3.507-9.214,0-12.722l9.071-9.07c1.69-1.69,3.949-2.621,6.36-2.621c1.724,0,3.366,0.483,4.782,1.372l-7.752,7.752  c-0.781,0.781-0.781,2.047,0,2.828c0.39,0.391,0.902,0.586,1.414,0.586s1.024-0.195,1.414-0.586l7.753-7.753  C31.852,36.3,31.44,40.949,28.42,43.97z M53.04,19.35l-9.071,9.07c-1.69,1.69-3.949,2.621-6.361,2.621  c-1.724,0-3.365-0.483-4.781-1.372l7.752-7.752c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0l-7.753,7.753  c-2.182-3.474-1.77-8.122,1.25-11.143l9.07-9.07c1.69-1.69,3.95-2.621,6.361-2.621c2.412,0,4.67,0.931,6.361,2.621  s2.621,3.949,2.621,6.361C55.661,15.401,54.73,17.66,53.04,19.35z" />
             </svg>{" "}
             &nbsp;
-            <Link to={"https://www.tlgbuilder.com/calculator/index.html"}>
+            <Link to={"https://www.tlgbuilder.com/new-home-vs-resale-calculator/"} target="_blank">
               New Home vs Resale Calculator
             </Link>{" "}
             &nbsp; | &nbsp;
-            <Link to={"https://www.tlgbuilder.com/calculator/index.html"}>
-              New Home Advantage vs Comparison Home
+            <Link to={"https://www.tlgbuilder.com/new-home-vs-renting-calculator/"} target="_blank">
+              New Home vs Renting Calculator
             </Link>
           </div>
           <p>
