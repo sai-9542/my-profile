@@ -30,7 +30,7 @@ const About = () => {
           <div className="flex gap-x-3">
             <div className="min-w-14 text-end">
               <span className="text-xs text-gray-500 dark:text-neutral-400">
-                FEB 2018 - MAY 2019
+                MAR 2018 - MAY 2019
               </span>
             </div>
 
