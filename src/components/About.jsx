@@ -1,6 +1,6 @@
 import verticals from "/logos/the-verticals.svg";
 import expand from "/logos/expand.svg";
-import gitam from "/logos/gitam.svg";
+import gitam from "/logos/gitam.png";
 import { Link } from "react-router";
 import { useState } from "react";
 
@@ -12,16 +12,7 @@ const About = () => {
       <div className="skills bg-white p-4">
         <h5 className="text-xl font-bold text-center">About</h5>
         <p className="text-center mt-3 leading-8 text-gray-600">
-          Results-oriented IT Professional with 7.4 years of hands-on experience
-          in the design, development, and implementation of dynamic web
-          applications. Proficient in front-end and back-end technologies
-          including HTML5, CSS3, Bootstrap, JavaScript, React.js, jQuery, Ajax,
-          PHP, and database management using MySQL, and MSSQL. Demonstrated
-          expertise in building responsive, user-friendly web interfaces and
-          robust server-side logic. Adept at collaborating with cross-functional
-          teams, troubleshooting issues, and delivering high-quality solutions
-          that meet business requirements. Passionate about continuous learning
-          and staying current with emerging web technologies.
+          Software Engineer with <span className="font-bold">8+ years of experience in full-stack web development</span>, specializing in <span className="font-bold">PHP, Laravel, CodeIgniter, Drupal, and MySQL</span>. Strong expertise in <span className="font-bold">JavaScript, ReactJS, jQuery, HTML5, CSS3, and Bootstrap</span>. Experienced in building scalable web applications, maintaining enterprise systems, and delivering high-quality solutions in collaborative team environments.
         </p>
       </div>
       <div className="mt-4 exp bg-white p-4">
@@ -42,11 +33,13 @@ const About = () => {
 
             <div className="grow pt-0.5 pb-8">
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                <img className="w-14 h-5" src={verticals} alt="Verticals" />
-                The Verticals
+                <Link to={"https://theverticals.in/"} target="_blank" className="display-inline">
+                  <img className="w-14 h-5" src={verticals} alt="Verticals" />
+                  The Verticals
+                </Link>
               </h3>
               <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                Workes as Web Developer
+                Worked as Web Developer
               </p>
             </div>
           </div>
@@ -66,11 +59,13 @@ const About = () => {
 
             <div className="grow pt-0.5 pb-8">
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                <img className="w-14 h-5" src={expand} alt="Expand" />
-                Expand Software Solutions
+                <Link to={"https://www.expandsoftwaresolutions.com/"} target="_blank" className="display-inline">
+                  <img className="w-14 h-5" src={expand} alt="Expand" />
+                  Expand Software Solutions
+                </Link>
               </h3>
               <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                Workes as Software Enginner
+                Worked as Software Enginner
               </p>
             </div>
           </div>
@@ -78,7 +73,7 @@ const About = () => {
           <div className="flex gap-x-3">
             <div className="min-w-14 text-end">
               <span className="text-xs text-gray-500 dark:text-neutral-400">
-                FEB 2021 - JUN 2025
+                FEB 2021 - MAR 2026
               </span>
             </div>
 
@@ -88,13 +83,15 @@ const About = () => {
               </div>
             </div>
 
-            <div className="grow pt-0.5 pb-8">
+            <div className="grow pt-0.5 pb-8">  
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                <img className="w-14 h-5" src={gitam} alt="GITAM" />
-                GITAM
+                <Link to={"https://www.gitam.edu/"} target="_blank">
+                  <img className="w-14 h-7" src={gitam} alt="GITAM" />
+                  GITAM
+                </Link>
               </h3>
               <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                Workes as Sr. Software Enginner
+                Working as Sr. Software Enginner
               </p>
             </div>
           </div>
@@ -140,6 +137,45 @@ const About = () => {
               <li>
                 <span className="font-semibold">Notifications:</span> Integrates
                 email notifications for request updates and approvals.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-3 pb-3 leading-8 text-gray-600 border-b-1 border-gray-100">
+          <h6 className="font-semibold text-lg">
+            Grievance Management System
+          </h6>
+          <p>
+            Developed a Grievance Management System to streamline the process of registering, tracking, and resolving customer complaints efficiently. The system allows front-office users to submit grievances through a centralized portal while automatically assigning them to the appropriate agents based on predefined categories. It ensures transparency, accountability, and faster resolution of issues through role-based access and a structured workflow.
+          </p>
+          <div className="pl-3">
+            <p className="font-bold">Key Features:</p>
+            <ul className="text-sm leading-6 list-disc pl-8">
+              <li>
+                <span className="font-semibold">Grievance Submission:</span> Front Office users can create grievances through a web portal by providing details such as title, description, category, address, and supporting document uploads. This ensures that all necessary information is captured at the time of complaint registration.
+              </li>
+              <li>
+                <span className="font-semibold">Automatic Ticket Assignment:</span>{" "}
+                The system automatically assigns grievances to agents based on the selected category, ensuring that the complaint reaches the appropriate department or responsible personnel without manual intervention.
+              </li>
+              <li>
+                <span className="font-semibold">Agent Dashboard:</span>{" "}
+                Agents can view and manage only the tickets assigned to them. They can update the grievance status throughout the resolution process, such as Open, In Progress, On Hold, Resolved, or Closed, ensuring proper tracking and communication.
+              </li>
+              <li>
+                <span className="font-semibold">Ticket Transfer:</span>{" "}
+                Agents have the ability to transfer grievances to other agents or departments if the issue requires specialized handling or reassignment.
+              </li>
+              <li>
+                <span className="font-semibold">Document Management:</span> The system supports uploading and storing documents related to grievances, allowing agents and administrators to review supporting evidence when resolving issues.
+              </li>
+              <li>
+                <span className="font-semibold">Status Tracking and Monitoring:</span> 
+                The system maintains a detailed history of grievance updates and status changes, providing complete visibility into the complaint lifecycle from submission to closure.
+              </li>
+              <li>
+                <span className="font-semibold">Notifications and Alerts:</span> 
+                Automated notifications keep users, agents, and administrators informed about ticket creation, status updates, and resolution progress, ensuring timely communication.
               </li>
             </ul>
           </div>
@@ -418,6 +454,33 @@ const About = () => {
                     Daily trigger mechanism using scheduled tasks or cron jobs.
                   </li>
                   <li>Data fetched dynamically from the employee database.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-3 pb-3 leading-8 text-gray-600 border-b-1 border-gray-100">
+              <h6 className="font-semibold text-lg">
+                Helpdesk Ticketing System
+              </h6>
+              <p>
+                We implemented a helpdesk support system to manage and track internal technical issues raised by employees and users. The system allows users to submit support requests through a web portal with details such as issue title, description, category, and attachments. Tickets are automatically routed to the appropriate department or support agent. Agents can update ticket status, communicate with requesters, and resolve issues efficiently. Administrators manage departments, agents, and ticket assignments through a centralized dashboard. The system helps improve issue tracking, response time, and overall support service management.
+              </p>
+              <div className="pl-3">
+                <p className="font-bold">Key Features:</p>
+                <ul className="text-sm leading-6 list-disc pl-8">
+                  <li>User portal to create support tickets with issue details and document attachments.</li>
+                  <li>
+                    Automatic ticket assignment based on category or department.
+                  </li>
+                  <li>
+                    Agent dashboard to view and manage assigned tickets.
+                  </li>
+                  <li>Ticket status tracking such as Open, In Progress, On Hold, Resolved, and Closed.</li>
+                  <li>Internal notes and communication between agents and users.</li>
+                  <li>Ticket transfer or reassignment to other departments or agents.</li>
+                  <li>Admin panel to manage agents, departments, and ticket categories.</li>
+                  <li>Email notifications for ticket creation, updates, and resolution.</li>
+                  <li>Document attachment support for better issue tracking.</li>
+                  <li>Reporting and monitoring of ticket activity and resolution time.</li>
                 </ul>
               </div>
             </div>
